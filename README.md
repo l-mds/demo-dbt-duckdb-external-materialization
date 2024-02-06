@@ -17,3 +17,16 @@ on-run-start: "INSTALL tpch; LOAD tpch; CALL dbgen(sf = 1);"
 dbt run -select setup
 ```
 # Structure 
+
+
+# List of the options
+
+- files
+    - parquet (direct) (default)
+        - todo?
+    - json
+    - csv
+
+- Plugins 
+    - sqlalchemy (via pandas)
+    - excel (via pandas)
